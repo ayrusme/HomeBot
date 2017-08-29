@@ -31,7 +31,8 @@ def send_available_endpoints():
 
 @APP.route("/football/PL/")
 def send_league_data():
-    return football.send_league_data()
+    teams = football.send_league_data()
+    return render_template('league_table.html',teams=teams)
 
 @APP.route("/football/PL/leaguetable/")
 def get_league_table():
