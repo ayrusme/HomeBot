@@ -28,15 +28,18 @@ def send_league_data():
         # Sending the request to the leagueTable endpoint
         teams = []
         teams_list = reqs.get(response.json().get('_links').get('teams').get('href'))
+        
         for team in teams_list.json().get('teams'):
             teams.append(dict(
-                name=team['name'],
-                crest="<img src=\"" + team['crestUrl'] + "\"/>"
+                name = team['name'],
+                # crest="<img src=\"" + team['crestUrl'] + "\"/>"
+                crest = team['crestUrl']
             ))
         # Populate the table
-        table = TeamsTable(teams)
+        #table = TeamsTable(teams)
         # Return the html
-        return table.__html__()
+        #return table.__html__()
+        return teams
 
 def get_league_table():
     """
