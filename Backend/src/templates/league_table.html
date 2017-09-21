@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Test Page</title>
+    </head>
+    <body>
+        <table>
+        {% for team in teams %}
+        <tr>
+        <th>{{team.name}}</th>
+        <td> <img src={{team.crest}}> </td>
+        </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
