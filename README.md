@@ -1,2 +1,2 @@
 # HomeBot
-Home Bot is a bot which aims to be smart enough to control your entire home.
+Home Bot is a bot which aims do everything you would require for your daily life
