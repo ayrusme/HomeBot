@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 requests = ">=2.20.0"
-Flask = "==1.0"
+Flask = "==2.2.5"
 Flask-Table = "==0.4.1"
 grequests = "*"
 
